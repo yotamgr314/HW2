@@ -1,28 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Smoothies</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo-container">
-            <a href="index.html"><img class="logo" src="images/navBarLogo.png" alt="logo"></a>
-            <a class="logo-text" href="index.html">SMOOTHIES</a>
-        </div>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="our-smoothies.html" aria-current="page">Our Smoothies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="logo-container">
+        <a href="index.html"
+          ><img class="logo" src="images/navBarLogo.png" alt="logo"
+        /></a>
+        <a class="logo-text" href="index.html">SMOOTHIES</a>
+      </div>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="our-smoothies.html" aria-current="page">Our Smoothies</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-</body>
+    <div class="smoothies-images">
+      <img src="./images/green-guitar.svg" alt="Smoothie 1" />
+      <img src="./images/black-guitar2.svg" alt="Smoothie 2" />
+      <img src="./images/black-guitar.svg" alt="Smoothie 3" />
+    </div>
+    <div class="smoothies-list">
+      <h2>List of Guitars</h2>
+      <ul>
+        <li>
+          <img src="./images/spaceship-icon.svg" alt="icon" />
+          <div>Aloha Pineapple</div>
+        </li>
+        <li>
+          <img src="./images/spaceship-icon.svg" alt="icon" /> Caribbean Passion
+        </li>
+        <li>
+          <img src="./images/spaceship-icon.svg" alt="icon" /> Mango-a-go-go
+        </li>
+        <li>
+          <img src="./images/spaceship-icon.svg" alt="icon" /> Strawberries ‘n
+          Cream
+        </li>
+      </ul>
+    </div>
+    <div class="your-choice">
+      <h2>Your Choice</h2>
+      <form class="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone-number">Phone Number:</label>
+        <input
+          type="tel"
+          pattern="[0-9]+"
+          id="phone-number"
+          name="phone-number"
+        />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer--about-us">
+        <div>WHO WE ARE</div>
+        <div>About</div>
+        <div>Team</div>
+        <div>Work With Us</div>
+        <div class="footer--about-us__social-media">
+          <a href="https://x.com/"><img src="./images/twiter-icon.svg" /></a>
+          <a href="https://www.facebook.com/?locale=he_IL"
+            ><img src="./images/facebook-icon.svg"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./images/instagram-icon.svg"
+          /></a>
+        </div>
+        <div>© 2024 SMOOTHIES</div>
+      </div>
+      <div class="footer--follow-us">
+        <div>FOLLOW US</div>
+        <div>Twiter</div>
+        <div>Facebook</div>
+        <div>Instagram</div>
+      </div>
+    </footer>
+  </body>
 </html>

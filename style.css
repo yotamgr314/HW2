@@ -1,293 +1,383 @@
-/* Reset basic styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Text styles */
-  li,
-  a {
-    font-family: "Nunito", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 40.92px;
-    text-align: left;
-    text-decoration: none;
-    color: black;
-  }
-  
-  /* Header styles */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 32px;
-    background-color: white;
-  }
-  
-  /* Logo container styles */
-  .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Adjust gap between logo and SMOOTHIES text if needed */
-  }
-  
-  .logo {
-    cursor: pointer;
-  }
-  
-  .logo-text {
-    font-family: Nunito;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32.74px;
-    letter-spacing: 0.25em;
-    text-align: left;
-    color: #3e3f43;
-  }
-  
-  /* Navigation styles */
-  .nav__links {
-    list-style: none;
-    display: flex;
-    gap: 64px; /* Default gap between nav items */
-  }
-  
-  .nav__links li:first-child {
-    margin-left: 135px; /* Distance between SMOOTHIES and Home */
-  }
-  
-  .nav__links li:last-child {
-    margin-right: 0;
-  }
-  
-  /* Specific item adjustments */
-  .nav__links li:nth-child(2) {
-    margin-right: 64px; /* Distance between Home and Our Smoothies */
-  }
-  
-  .nav__links li:nth-child(3) {
-    margin-right: 64px; /* Distance between Our Smoothies and About */
-  }
-  
-  .nav__links li:nth-child(4) {
-    margin-right: 64px; /* Distance between About and Contact */
-  }
-  
-  /* Ensure the right padding for the header to match the distance */
-  header {
-    padding-right: 120px;
-  }
-  
-  /* Selected state for <li> elements in the navigator */
-  .nav__links li:active {
-    font-weight: bold; /* Make the text bold when clicked */
-  }
-  
-  .nav__links a {
-    font-family: Nunito;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 40.92px;
-    text-align: left;
-    color: #612999;
-  }
-  
-  .nav__links a:hover {
-    color: #8204ff; /* שינוי לצבע בהיר יותר במעבר עכבר */
-  }
-  
-  .nav__links a[aria-current="page"] {
-    font-weight: 700; /* הפיכת הטקסט לעבה יותר כאשר האלמנט במצב נבחר */
-  }
-  
-  .welcome-picture {
-    position: relative;
-  }
-  
-  .enjoy-text {
-    position: absolute;
-    top: 32px;
-    left: 32px;
-    width: 448px;
-    background-color: transparent;
-  }
-  
-  .enjoy-text--header {
-    font-family: "Nunito";
-    font-weight: 800;
-    font-size: 96px;
-    color: #612999;
-    background-color: transparent;
-  }
-  
-  .enjoy-text--body {
-    font-family: "Nunito";
-    font-weight: 600;
-    font-size: 24px;
-    color: #000000;
-    background-color: transparent;
-  }
-  
-  .about {
-    padding: 10px 32px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .about > div:first-child {
-    font-family: "Rubik";
-    font-size: 40px;
-    font-weight: 500;
-    color: #612999;
-    margin-bottom: 24px;
-  }
-  
-  .about--body {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    font-family: "Rubik";
-    font-size: 20px;
-    font-weight: 400;
-  }
-  
-  .popular-drink {
-    padding: 32px;
-  }
-  
-  .popular-drink > div:first-child {
-    font-family: "Rubik";
-    font-size: 40px;
-    font-weight: 500;
-    color: #612999;
-    margin-bottom: 24px;
-  }
-  
-  .popular-drink--card-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    width: 820px;
-    height: 1265px;
-    overflow: auto;
-  }
-  
-  .popular-drink--card-list__item {
-    width: 376px;
-    height: 496px;
-    background-color: #efecff;
-    text-align: left;
-    border-radius: 38px;
-  }
-  
-  .popular-drink--card-list__item-img {
-    position: relative;
-  }
-  
-  .like-icon {
-    position: absolute;
-    top: 35px;
-    right: 42px;
-    background-color: #efecff;
-    border-radius: 50%;
-    padding: 14px 12px;
-  }
-  
-  .popular-drink--card-list__item-body {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: transparent;
-    padding: 20px 51px;
-  }
-  
-  .popular-drink--card-list__item-body > div:nth-child(1) {
-    font-family: "Abel";
-    font-size: 30px;
-    font-weight: 400;
-    background-color: transparent;
-  }
-  
-  .popular-drink--card-list__item-body > div:nth-child(2) {
-    font-family: "Abel";
-    font-weight: 400;
-    font-size: 18px;
-    background-color: transparent;
-    color: #333333;
-  }
-  
-  .popular-drink--card-list__item-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: transparent;
-  }
-  
-  .popular-drink--card-list__item-footer > div {
-    font-family: "Abel";
-    font-size: 35px;
-    font-weight: 400;
-    color: #612999;
-    background-color: transparent;
-  }
-  
-  .popular-drink--card-list__item-footer > img {
-    border-top-left-radius: 38px;
-    border-top-right-radius: 38px;
-  }
-  
-  .popular-drink--card-list__item-footer > img {
-    background-color: #612999;
-    border-radius: 100%;
-    padding: 10px;
-  }
-  
-  .footer {
-    background-color: #efecff;
-    display: flex;
-    padding: 32px;
-    gap: 150px;
-  }
-  
-  .footer--about-us {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-family: "Nunito";
-    font-size: 16px;
-    font-weight: 400;
-    color: #333333;
-  }
-  
-  .footer--about-us > div:first-child {
-    font-family: "Nunito";
-    font-size: 18px;
-    font-weight: 700;
-  }
-  
-  .footer--about-us > div:last-child {
-    margin-top: -2px;
-  }
-  
-  .footer--about-us__social-media {
-    display: flex;
-    gap: 24px;
-  }
-  
-  .footer--follow-us {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-family: "Nunito";
-    font-size: 16px;
-    font-weight: 400;
-    color: #333333;
-  }
-  
-  .footer--follow-us > div:first-child {
-    font-family: "Nunito";
-    font-size: 18px;
-    font-weight: 700;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 32px;
+  background-color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo-text {
+  font-family: Nunito;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.74px;
+  letter-spacing: 0.25em;
+  text-align: left;
+  color: #3e3f43;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 64px;
+}
+
+header {
+  padding-right: 120px;
+}
+
+.nav__links li:active {
+  font-weight: bold;
+}
+
+.nav__links a {
+  font-family: Nunito;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40.92px;
+  text-align: left;
+  color: #612999;
+}
+
+.nav__links a:hover {
+  color: #8204ff;
+}
+
+.nav__links a[aria-current="page"] {
+  font-weight: 700;
+}
+
+.welcome-picture {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/guitar wall.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.enjoy-text {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 448px;
+  background-color: transparent;
+}
+
+.enjoy-text--header {
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 96px;
+  color: #612999;
+  background-color: transparent;
+}
+
+.enjoy-text--body {
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+  background-color: transparent;
+}
+
+.about {
+  padding: 32px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about > div:first-child {
+  font-family: "Rubik";
+  font-size: 40px;
+  font-weight: 500;
+  color: #612999;
+  margin-bottom: 24px;
+}
+
+.about--body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+
+.popular-drink {
+  padding: 32px;
+}
+
+.popular-drink > div:first-child {
+  font-family: "Rubik";
+  font-size: 40px;
+  font-weight: 500;
+  color: #612999;
+  margin-bottom: 32px;
+}
+
+.popular-drink--card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 250px;
+}
+
+.popular-drink--card-list__item {
+  width: 376px;
+  height: 496px;
+  background-color: #efecff;
+  text-align: left;
+  border-radius: 38px;
+}
+
+.popular-drink--card-list__item-img {
+  position: relative;
+}
+
+.popular-drink--card-list__item-img > img:first-child {
+  border-top-left-radius: 38px;
+  border-top-right-radius: 38px;
+}
+
+.like-icon {
+  position: absolute;
+  top: 35px;
+  right: 42px;
+  border-radius: 50%;
+  padding: 14px 12px;
+  background: url("./images/like-icon.svg");
+  background-repeat: no-repeat;
+  background-color: #efecff;
+  background-size: 23px, 20px;
+  background-color: #efecff;
+  background-position: center;
+}
+
+.popular-drink--card-list__item-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: transparent;
+  padding: 20px 51px;
+}
+
+.popular-drink--card-list__item-body > div:nth-child(1) {
+  font-family: "Abel";
+  font-size: 30px;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.popular-drink--card-list__item-body > div:nth-child(2) {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: transparent;
+  color: #333333;
+}
+
+.popular-drink--card-list__item-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.popular-drink--card-list__item-footer > div {
+  font-family: "Abel", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #612999;
+  background-color: transparent;
+}
+
+.popular-drink--card-list__item-footer > img {
+  border-top-left-radius: 38px;
+  border-top-right-radius: 38px;
+}
+
+.popular-drink--card-list__item-footer > img {
+  background-color: #612999;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #efecff;
+  display: flex;
+  padding: 32px;
+  gap: 150px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer--about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.footer--about-us > div:first-child {
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer--about-us > div:last-child {
+  margin-top: -2px;
+}
+
+.footer--about-us__social-media {
+  display: flex;
+  gap: 24px;
+}
+
+.footer--follow-us div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.footer--follow-us > div:first-child {
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer--follow-us {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.smoothies-images {
+  display: flex;
+  padding: 0 32px;
+  gap: 32px;
+}
+
+.smoothies-images img {
+  border: 4px solid #e6dbfe;
+}
+
+.smoothies-list {
+  padding: 32px;
+}
+
+.smoothies-list h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #612999;
+  margin-bottom: 32px;
+}
+
+.smoothies-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.smoothies-list li {
+  display: flex;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  gap: 16px;
+}
+
+.smoothies-list li img {
+  background-color: #612999;
+  border-radius: 50%;
+  padding: 20px 28px;
+}
+
+.your-choice {
+  margin: 32px;
+  padding: 32px;
+  background-color: #efecff;
+  margin-bottom: 458px;
+}
+
+.your-choice h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #612999;
+  margin-bottom: 16px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.registration-form label {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.registration-form input,
+.registration-form select {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registration-form button {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #612999;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registration-form button:hover {
+  background-color: #8204ff;
+}
