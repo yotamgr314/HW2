@@ -83,7 +83,7 @@ header {
 
 }
 
-.enjoy-text {
+.RockOn-text {
   position: absolute;
   top: 32px;
   left: 32px;
@@ -91,7 +91,7 @@ header {
   background-color: transparent;
 }
 
-.enjoy-text--header {
+.RockOn-text--header {
   font-family: "Nunito";
   font-weight: 800;
   font-size: 96px;
@@ -99,7 +99,7 @@ header {
   background-color: transparent;
 }
 
-.enjoy-text--body {
+.RockOn-text--body {
   font-family: "Nunito";
   font-weight: 600;
   font-size: 24px;
@@ -130,11 +130,11 @@ header {
   font-family: "Rubik", sans-serif;
 }
 
-.popular-drink {
+.popular-guitar {
   padding: 32px;
 }
 
-.popular-drink > div:first-child {
+.popular-guitar > div:first-child {
   font-family: "Rubik";
   font-size: 40px;
   font-weight: 500;
@@ -142,14 +142,14 @@ header {
   margin-bottom: 32px;
 }
 
-.popular-drink--card-list {
+.popular-guitar--card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
   margin-bottom: 250px;
 }
 
-.popular-drink--card-list__item {
+.popular-guitar--card-list__item {
   width: 376px;
   height: 496px;
   background-color: #efecff;
@@ -157,11 +157,11 @@ header {
   border-radius: 38px;
 }
 
-.popular-drink--card-list__item-img {
+.popular-guitar--card-list__item-img {
   position: relative;
 }
 
-.popular-drink--card-list__item-img > img:first-child {
+.popular-guitar--card-list__item-img > img:first-child {
   border-top-left-radius: 38px;
   border-top-right-radius: 38px;
 }
@@ -180,7 +180,7 @@ header {
   background-position: center;
 }
 
-.popular-drink--card-list__item-body {
+.popular-guitar--card-list__item-body {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -188,14 +188,14 @@ header {
   padding: 20px 51px;
 }
 
-.popular-drink--card-list__item-body > div:nth-child(1) {
+.popular-guitar--card-list__item-body > div:nth-child(1) {
   font-family: "Abel";
   font-size: 30px;
   font-weight: 400;
   background-color: transparent;
 }
 
-.popular-drink--card-list__item-body > div:nth-child(2) {
+.popular-guitar--card-list__item-body > div:nth-child(2) {
   font-family: "Abel", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -203,13 +203,13 @@ header {
   color: #333333;
 }
 
-.popular-drink--card-list__item-footer {
+.popular-guitar--card-list__item-footer {
   display: flex;
   justify-content: space-between;
   background-color: transparent;
 }
 
-.popular-drink--card-list__item-footer > div {
+.popular-guitar--card-list__item-footer > div {
   font-family: "Abel", sans-serif;
   font-size: 35px;
   font-weight: 400;
@@ -217,12 +217,12 @@ header {
   background-color: transparent;
 }
 
-.popular-drink--card-list__item-footer > img {
+.popular-guitar--card-list__item-footer > img {
   border-top-left-radius: 38px;
   border-top-right-radius: 38px;
 }
 
-.popular-drink--card-list__item-footer > img {
+.popular-guitar--card-list__item-footer > img {
   background-color: #612999;
   border-radius: 100%;
   padding: 10px;
@@ -285,21 +285,21 @@ header {
   gap: 8px;
 }
 
-.smoothies-images {
+.guitars-images {
   display: flex;
   padding: 0 32px;
   gap: 32px;
 }
 
-.smoothies-images img {
+.guitars-images img {
   border: 4px solid #e6dbfe;
 }
 
-.smoothies-list {
+.guitars-list {
   padding: 32px;
 }
 
-.smoothies-list h2 {
+.guitars-list h2 {
   font-family: "Nunito", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -307,14 +307,14 @@ header {
   margin-bottom: 32px;
 }
 
-.smoothies-list ul {
+.guitars-list ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.smoothies-list li {
+.guitars-list li {
   display: flex;
   align-items: center;
   font-family: "Rubik", sans-serif;
@@ -324,7 +324,7 @@ header {
   gap: 16px;
 }
 
-.smoothies-list li img {
+.guitars-list li img {
   background-color: #612999;
   border-radius: 50%;
   padding: 20px 28px;
