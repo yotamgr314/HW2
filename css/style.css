@@ -228,7 +228,10 @@ header {
   padding: 10px;
 }
 
+
+
 .footer {
+
   background-color: #efecff;
   display: flex;
   padding: 32px;
@@ -236,6 +239,7 @@ header {
   position: fixed;
   bottom: 0;
   width: 100%;
+  
 }
 
 .footer--about-us {
@@ -278,6 +282,8 @@ header {
   font-size: 18px;
   font-weight: 700;
 }
+
+
 
 .footer--follow-us {
   display: flex;
